@@ -1,9 +1,8 @@
-package lesson_1;
+package geekbrains.lesson1;
 
 public class Main {
     public static void  main(String[] args){
 
-        //2. Создать переменные всех пройденных типов данных и инициализировать их значения.
         int a = 666;
         float b = 3.57f;
         long c = 34234363232L;
@@ -19,10 +18,9 @@ public class Main {
         isPositiveOrNegative(11);
         isNegative(5);
         name("Frank");
-        isLeapYear(2020);
+//        isLeapYear(2020);
     }
-    // 3. Написать метод вычисляющий выражение a * (b + (c / d)) и возвращающий результат,
-    //где a, b, c, d – аргументы этого метода, имеющие тип float.
+
     public static float calculate(float a, float b, float c, float d){
         float result =  a * (b + (c / d));
         System.out.println(result);
@@ -54,15 +52,16 @@ public class Main {
             System.out.println("Hello " + name + "!");
         }
 
-    //8. Написать метод, который определяет, является ли год високосным, и выводит сообщение в консоль.
-    // Каждый 4-й год является високосным, кроме каждого 100-го, при этом каждый 400-й – високосный.
-    public static void isLeapYear(int year) {
-        if ((year % 4 == 0 && year % 400 = 0) && year % 100 == 0) {
-            System.out.println(year + " Не високосный год");
-        } else {
-            System.out.println(year + " Високосный год");
-        }
-    }
+
+//    public static void isLeapYear(int year) {
+//        if ((year % 4 == 0 && year % 400 = 0) && year % 100 == 1) {
+//            System.out.println(year + " Не високосный год");
+//        } else {
+//            System.out.println(year + " Високосный год");
+//        }
+//    }
+
+
 
 
 }
