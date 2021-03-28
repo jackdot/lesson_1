@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String args[]){
+    public static void main(String[] args){
 
         randomNumberGues();
 
@@ -32,7 +32,7 @@ public class Main {
 
             } else if (userNumber > randomNumber) {
                 System.out.println("Вы ввели слишком большое число!");
-                
+
             } else if (userNumber < randomNumber) {
                 System.out.println("Вы ввели слишком маленькое число!");
             }
