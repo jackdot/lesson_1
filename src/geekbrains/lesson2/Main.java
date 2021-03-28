@@ -8,6 +8,7 @@ public class Main {
         arrayMultiplyBy2();
         matrixDiagonalFill();
         //arrayMinMax();
+
     }
 
     public static void invertArray() {
@@ -62,15 +63,6 @@ public class Main {
 
         }
     }
-//    public static void arrayMinMax (){
-//        int[] array = new int[8];
-//        for (int i = 0; i < array.length; i++) {
-//
-//            System.out.println(array);
-//
-//        }
-//        System.out.println();
-//    }
 }
 
 
