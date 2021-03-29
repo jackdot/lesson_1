@@ -71,30 +71,7 @@ public class Main {
         return tryCount;
 
     }
-    //При запуске программы компьютер загадывает слово, запрашивает ответ у пользователя, сравнивает его с загаданным словом и сообщает,
-    // правильно ли ответил пользователь. Если слово не угадано, компьютер показывает буквы, которые стоят на своих местах.
-    //apple – загаданное
-    //apricot - ответ игрока
 
-    private static void wordsGame() {
-        //String[] words = {"apple", "orange", "lemon", "banana", "apricot", "avocado", "broccoli", "carrot", "cherry", "garlic", "grape", "melon", "leak", "kiwi", "mango", "mushroom", "nut", "olive", "pea", "peanut", "pear", "pepper", "pineapple", "pumpkin", "potato"};
-        String[] words = {"apple", "orange"};
-        Scanner sc = new Scanner (System.in);
-
-        System.out.println ("Угадайте слово!");
-
-        String userAnswer = sc.nextLine ();
-
-        if(userAnswer == words[0]){
-            System.out.println ("Конгратуляции, вы угадали!");
-        } else{
-            System.out.println ("вы не угадали!");
-        }
-
-
-
-
-    }
 }
 
 
