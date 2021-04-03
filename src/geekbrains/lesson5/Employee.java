@@ -9,7 +9,7 @@ public class Employee {
     private long phoneNumber;
 
 
-    Employee(String name, int age, String position, int salary, String email, long phoneNumber ){
+    Employee(String name, int age, String position, int salary, String email, long phoneNumber) {
         this.name = name;
         this.age = age;
         this.position = position;
@@ -18,9 +18,18 @@ public class Employee {
         this.phoneNumber = phoneNumber;
     }
 
-    public void getEmployeeInfo(){
+    public void getEmployeeInfo() {
         System.out.println ("Имя: " + name + " " + "\nВозраст: " + age + "\nДолжность: " + position + "\nЗарплата: " + salary + " монет" + "\nПочта: " + email + "\nТелефон: " + "+" + phoneNumber + " ");
-        System.out.println();
+        System.out.println ();
+    }
+
+    public String toString() {
+        return ("Имя: " + name + " " + "\nВозраст: " + age + "\nДолжность: " + position + "\nЗарплата: " + salary + " монет" + "\nПочта: " + email + "\nТелефон: " + "+" + phoneNumber);
+    }
+
+    public int getAge() {
+        System.out.println (" ");
+        return age;
     }
 
 
