@@ -41,14 +41,10 @@ public class Main {
         System.out.println("Игра закончена");
     }
     public static boolean checkWin(char symb) {
-        if(map[0][0] == symb && map[0][1] == symb && map[0][2] == symb) return true;
-        if(map[1][0] == symb && map[1][1] == symb && map[1][2] == symb) return true;
-        if (map[2][0] == symb && map[2][1] == symb && map[2][2] == symb) return true;
-        if (map[0][0] == symb && map[1][0] == symb && map[2][0] == symb) return true;
-        if (map[0][1] == symb && map[1][1] == symb && map[2][1] == symb) return true;
-        if (map[0][2] == symb && map[1][2] == symb && map[2][2] == symb) return true;
-        if (map[0][0] == symb && map[1][1] == symb && map[2][2] == symb) return true;
-        if (map[2][0] == symb && map[1][1] == symb && map[0][2] == symb) return true;
+        boolean toRight = true;
+        for (int i=0; i<SIZE; i++) {
+            toRight = toRight & (map[i][i] == symb);
+        } if (toRight) return true;
         return false;
     }
     public static boolean isMapFull() {
